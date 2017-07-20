@@ -10,7 +10,7 @@ function refreshInviteButtonStatus () {
   var isDisableInvite = !($selectedUsers.length || $eMail.value)
 
   $inviteButton.disabled = isDisableInvite;
-  $inviteButton.style.cursor = isDisableInvite ? 'not-allowed' : 'pointer';
+  $inviteButton.className = isDisableInvite ? 'disabled' : '';
 }
 
 function calcAvailableNumber () {
