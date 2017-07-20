@@ -1,7 +1,7 @@
 var path = require('path')
 
 module.exports = {
-  entry: ['./index.html', './src/js/main.js'],
+  entry: ['./src/js/main.js'],
   output: {
     filename: 'bundle.js',
     path: path.join(__dirname, './dist'),
@@ -11,11 +11,11 @@ module.exports = {
     rules: [
       {
         test: /\.html$/,
-        loader: 'file-loader?name=[path][name].[ext]!extract-loader!html-loader'
+        loader: 'html-loader'
       },
       {
         test: /\.(sass|scss)$/,
-        loaders: ['style-loader', 'css-loader', 'scss-loader']
+        loaders: ['style-loader', 'css-loader', 'sass-loader']
       },
       {
         test: /\.(png|jpg|gif)$/,
