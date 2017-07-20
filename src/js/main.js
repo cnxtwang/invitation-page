@@ -32,13 +32,13 @@ $eMail.addEventListener('keyup', function() {
 })
 
 $inviteButton.addEventListener('click', function() {
-  var checkedValue = $eMail.value + ' ';
+  var checkedValue = '';
 
   $users.forEach(function (item) {
     if(item.checked) checkedValue += item.value + ' '
   })
 
-  alert(checkedValue + 'has invited.')
+  alert(checkedValue + $eMail.value + ' has invited.')
 })
 
 calcAvailableNumber()
