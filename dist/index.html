@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Invitation</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Invite people to Dribbble</h1>
+      <p><span id="availableNumber"></span> invites available</p>
+
+      <div class="search">
+        <input type="text" id="search">
+        <label for="search"><img src="/59dc2203e947bcef63c324ba6ea2a230.png" alt="search"></label>
+      </div>
+    </header>
+
+    <main>
+      <div class="user">
+        <img src="http://i.pravatar.cc/80" alt="" class="photo">
+
+        <aside>
+          <div class="name">Alex</div>
+          <div class="skill">photoshop, pinanacle studio</div>
+          <div class="location">
+            <span class="reality">Belarus</span>
+            <span class="virtual">bymark.by</span>
+          </div>
+        </aside>
+
+        <div class="check-box">
+          <input type="checkbox" id="user-1" value="Alex" name="users">
+          <label for="user-1"></label>
+        </div>
+      </div>
+
+      <div class="user">
+        <img src="http://i.pravatar.cc/80" alt="" class="photo">
+
+        <aside>
+          <div class="name">Alina</div>
+          <div class="location">
+            <span class="reality">Ukraine Kiev</span>
+            <span class="virtual">kuvshynova.com</span>
+          </div>
+        </aside>
+
+        <div class="check-box">
+          <input type="checkbox" id="user-2" value="Alina" name="users">
+          <label for="user-2"></label>
+        </div>
+      </div>
+
+      <div class="user">
+        <img src="http://i.pravatar.cc/80" alt="" class="photo">
+
+        <aside>
+          <div class="name">Yolanda</div>
+          <div class="skill">wordpress, web design, joomla, html</div>
+          <div class="location">
+            <span class="reality">Palma de Mallorica</span>
+            <span class="virtual">yollandagranados.com</span>
+          </div>
+        </aside>
+
+        <div class="check-box">
+          <input type="checkbox" id="user-3" value="Yolanda" name="users">
+          <label for="user-3"></label>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <input type="text" placeholder="Send invite by e-mail" id="e-mail">
+
+      <button id="invite">invite</button>
+    </footer>
+  </div>
+</body>
+<script src="./bundle.js"></script>
+</html>
