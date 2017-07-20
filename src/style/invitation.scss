@@ -1,13 +1,14 @@
 $bg-color: #323334;
-$light-gray: #EAEBEC;
-$text-light-gray: #CACBCC;
-$text-gray: #ACADAE;
-$text-dark-gray: #27292A;
-$gray: #999A9B;
-$green: #8FBA66;
-$pink: #E6508A;
-$deep-pink: #cd4d74;
-$dark-pink: #af4164;
+$input-border: #EAEBEC;
+$skill-text: #CACBCC;
+$location: #ACADAE;
+$url: #27292A;
+$input-text: #999A9B;
+$user-name: #8FBA66;
+$invite-button: #E6508A;
+$deep-invite-button: #cd4d74;
+$dark-invite-button: #af4164;
+$disabled-button: #999A9B;
 
 * {
   box-sizing: border-box;
@@ -40,7 +41,7 @@ body {
 
     p {
       margin-top: 0;
-      color: $gray;
+      color: $input-text;
     }
 
     .search {
@@ -51,9 +52,9 @@ body {
         outline: none;
         border: none;
         width: 100%;
-        color: $gray;
+        color: $input-text;
         font-size: 16px;
-        border-bottom: 0.05em solid $light-gray;
+        border-bottom: 0.05em solid $input-border;
       }
 
       img {
@@ -86,24 +87,24 @@ body {
         padding: 0 0 .2em 1.5em;
 
         .name {
-          color: $green;
+          color: $user-name;
           font-size: 18px;
         }
 
         .skill {
           font-size: 13px;
           letter-spacing: .02em;
-          color: $text-light-gray;
+          color: $skill-text;
         }
 
         .location {
           .reality {
-            color: $text-gray;
+            color: $location;
           }
 
           .virtual {
             margin-left: .15em;
-            color: $text-dark-gray;
+            color: $url;
             letter-spacing: -0.01em;
           }
         }
@@ -126,7 +127,7 @@ body {
         height: 1.2em;
         cursor: pointer;
         position: absolute;
-        border: .05em solid $light-gray;
+        border: .05em solid $input-border;
         box-sizing: content-box;
         border-radius: 100%;
         &:after {
@@ -164,7 +165,7 @@ body {
   footer {
     input {
       width: 100%;
-      border: .08em solid #E0E1E2;
+      border: .08em solid $input-border;
       border-radius: .2em;
       outline: none;
       font-size: .9em;
@@ -178,7 +179,7 @@ body {
       width: 100%;
       outline: none;
       margin-top: 1.7em;
-      background: $pink;
+      background: $invite-button;
       border: none;
       border-radius: .2em;
       height: 3.5em;
@@ -187,20 +188,20 @@ body {
       text-transform: uppercase;
 
       &:hover {
-        background: $deep-pink;
+        background: $deep-invite-button;
       }
 
       &:active {
-        background: $dark-pink;
+        background: $dark-invite-button;
       }
     }
 
     button.disabled {
       cursor: not-allowed;
-      background: $gray;
+      background: $disabled-button;
 
       &:hover, &:active {
-        background: $gray;
+        background: $disabled-button;
       }
     }
   }
